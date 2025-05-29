@@ -9,7 +9,7 @@ app = Flask(__name__)
 os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "true"
 
 # Load model once at startup
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
 
 # Normalization
 def normalize(skill):
